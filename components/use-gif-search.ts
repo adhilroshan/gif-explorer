@@ -49,7 +49,6 @@ export function useGifSearch(initialGifs: Gif[] = []): UseGifSearchResult {
 
       if (resetOffset) {
         setGifs(result.data);
-        setTotalCount(result.totalCount);
       } else {
         setGifs(prev => [...prev, ...result.data]);
       }
@@ -83,7 +82,6 @@ export function useGifSearch(initialGifs: Gif[] = []): UseGifSearchResult {
 
       if (resetOffset) {
         setGifs(result.data);
-        setTotalCount(result.totalCount);
       } else {
         setGifs(prev => [...prev, ...result.data]);
       }
